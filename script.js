@@ -1,7 +1,7 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 
-const BLOCK_SIZE = 30;
+const BLOCK_SIZE = 20;
 const BOARD_WIDTH = Math.floor(canvas.width / BLOCK_SIZE);
 const BOARD_HEIGHT = Math.floor(canvas.height / BLOCK_SIZE);
 
