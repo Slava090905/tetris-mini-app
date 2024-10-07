@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+        #game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 80vh; /* Используем 80% высоты экрана */
+        }
+        canvas {
+            border: 2px solid white;
+            background: gray;
+            margin-bottom: 10px; /* Отступ между канвасом и кнопками */
+        }
+        #controls {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #666;
+        }
+        #score {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="tetris" width="300" height="600"></canvas> <!-- Уменьшено до 300x600 -->
+        <div id="controls">
+            <button id="startButton">Start</button>
+            <button id="pauseButton" style="display: none;">Pause</button>
+            <button id="restartButton" style="display: none;">Restart</button>
+        </div>
+        <div id="move-controls">
+            <button id="leftButton"><i class="fas fa-arrow-left"></i></button>
+            <button id="rotateButton"><i class="fas fa-undo"></i></button>
+            <button id="rightButton"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div id="score">Score: <span id="scoreValue">0</span></div>
+    </div>
+    <script src="script.js"></script> <!-- Подключение JavaScript файла -->
+</body>
+</html>
