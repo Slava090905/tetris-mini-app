@@ -20,9 +20,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 60vh; /* Изменено на 60% высоты экрана */
-            width: 100%; /* Полная ширина контейнера */
-            max-width: 400px; /* Ограничьте максимальную ширину */
+            height: 60vh; 
+            width: 100%; 
+            max-width: 300px; /* Установлено для лучшей визуализации */
         }
         canvas {
             border: 2px solid white;
@@ -58,7 +58,7 @@
 </head>
 <body>
     <div id="game-container">
-        <canvas id="tetris" width="300" height="600"></canvas> <!-- Уменьшено на уровне CSS -->
+        <canvas id="tetris" width="200" height="200"></canvas> <!-- Обновленные размеры канваса для 20x10 пикселей -->
         <div id="controls">
             <button id="startButton">Start</button>
             <button id="pauseButton" style="display: none;">Pause</button>
